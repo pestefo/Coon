@@ -597,6 +597,29 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>python main.py move $1</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>283DAEE5-EB32-4A9B-A99B-E115164AF0CD</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -642,29 +665,6 @@
 			<string>12FD751F-A516-4064-AF3B-A5EB4DD32CBE</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>python main.py move $1</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>283DAEE5-EB32-4A9B-A99B-E115164AF0CD</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -944,7 +944,7 @@
 		<key>B99185CE-326C-4862-98C3-1766D4FB0CAA</key>
 		<dict>
 			<key>xpos</key>
-			<integer>565</integer>
+			<integer>485</integer>
 			<key>ypos</key>
 			<integer>55</integer>
 		</dict>
@@ -977,19 +977,10 @@
 			<integer>200</integer>
 		</dict>
 	</dict>
-	<key>variables</key>
-	<dict>
-		<key>app_id</key>
-		<string></string>
-		<key>base</key>
-		<string>USD</string>
-		<key>currencies</key>
-		<string></string>
-		<key>precision</key>
-		<string>2</string>
-	</dict>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string>0.1</string>
+	<string>0.9</string>
 	<key>webaddress</key>
 	<string></string>
 </dict>
