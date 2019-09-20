@@ -4,8 +4,6 @@
 <dict>
 	<key>bundleid</key>
 	<string>tech.tomy.coon</string>
-	<key>category</key>
-	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
 		<key>076F41F4-B7BA-4F1A-872C-C1D49034DD7E</key>
@@ -363,6 +361,23 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>B99185CE-326C-4862-98C3-1766D4FB0CAA</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -406,23 +421,6 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>744D6D8C-2F3F-4634-86E7-7DB0393AA9E8</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>B99185CE-326C-4862-98C3-1766D4FB0CAA</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -484,6 +482,29 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>python main.py add $1</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F9ED33B4-199D-41E8-9156-EF03F6AC2424</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>triggerid</key>
 				<string>add</string>
 			</dict>
@@ -491,6 +512,25 @@
 			<string>alfred.workflow.trigger.external</string>
 			<key>uid</key>
 			<string>47ED16A9-7ED0-4751-AB2A-63903ED24ACA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>add</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>7D049F48-ABA2-49AC-8289-8A04AF473C00</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -546,25 +586,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>externaltriggerid</key>
-				<string>add</string>
-				<key>passinputasargument</key>
-				<false/>
-				<key>passvariables</key>
-				<true/>
-				<key>workflowbundleid</key>
-				<string>self</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.callexternaltrigger</string>
-			<key>uid</key>
-			<string>7D049F48-ABA2-49AC-8289-8A04AF473C00</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -582,29 +603,6 @@
 			<string>69525402-E1B6-44B2-AC3D-8CAE8D6CCDC7</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>python main.py add $1</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>F9ED33B4-199D-41E8-9156-EF03F6AC2424</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -633,38 +631,6 @@
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>076F41F4-B7BA-4F1A-872C-C1D49034DD7E</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>triggerid</key>
-				<string>remove</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>23556982-ED77-4A8C-81B4-E55098B8E45C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>externaltriggerid</key>
-				<string>remove</string>
-				<key>passinputasargument</key>
-				<false/>
-				<key>passvariables</key>
-				<true/>
-				<key>workflowbundleid</key>
-				<string>self</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.callexternaltrigger</string>
-			<key>uid</key>
-			<string>03BDC0A3-78E1-43EB-B8EA-2A4021B2D558</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -741,6 +707,19 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>triggerid</key>
+				<string>remove</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>23556982-ED77-4A8C-81B4-E55098B8E45C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -760,6 +739,25 @@
 			<string>3401A8F2-69A9-4460-ACDA-DBAF0EC332C3</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>remove</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>03BDC0A3-78E1-43EB-B8EA-2A4021B2D558</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -788,50 +786,6 @@
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>935E3039-D682-4DE5-A4D2-A2C368DBB0E8</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>python main.py save_arrange $1</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>283DAEE5-EB32-4A9B-A99B-E115164AF0CD</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>Currency arrangement saved✅</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>C88F188B-CF51-4E6A-A989-74E113612621</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -887,6 +841,50 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>python main.py save_arrange $1</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>283DAEE5-EB32-4A9B-A99B-E115164AF0CD</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Currency arrangement saved✅</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>C88F188B-CF51-4E6A-A989-74E113612621</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -929,14 +927,6 @@
 			<integer>1</integer>
 		</dict>
 		<dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.hidealfred</string>
-			<key>uid</key>
-			<string>E99A7B27-F963-4EC8-95A1-2BAA11A28BEA</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
 			<key>config</key>
 			<dict>
 				<key>delimiter</key>
@@ -950,6 +940,14 @@
 			<string>alfred.workflow.utility.split</string>
 			<key>uid</key>
 			<string>5D16B0AF-C5FB-4F9C-8F6C-BCD639702D0F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.hidealfred</string>
+			<key>uid</key>
+			<string>E99A7B27-F963-4EC8-95A1-2BAA11A28BEA</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -979,23 +977,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>cur-ref</string>
-				<key>subtext</key>
-				<string>Refresh will runs automatically, but you can still trigger this manually</string>
-				<key>text</key>
-				<string>-ref: Refresh Currency List &amp; Rates</string>
-				<key>withspace</key>
+				<key>concurrently</key>
 				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>python main.py refresh</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>E41B05CE-F31E-4253-B5D2-2A57BEF6DF3E</string>
+			<string>3B16E651-3F46-4B89-AA1A-1054F5EB1060</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1021,25 +1021,23 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>cur-ref</string>
+				<key>subtext</key>
+				<string>Refresh will runs automatically, but you can still trigger this manually</string>
+				<key>text</key>
+				<string>-ref: Refresh Currency List &amp; Rates</string>
+				<key>withspace</key>
 				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>python main.py refresh</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>3B16E651-3F46-4B89-AA1A-1054F5EB1060</string>
+			<string>E41B05CE-F31E-4253-B5D2-2A57BEF6DF3E</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1107,7 +1105,119 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>&lt;div align="center"&gt;
+    &lt;img src="./src/icon.png" width="200" height="200"&gt;
+&lt;/div&gt;
+
+# Coon
+
+Coon is an Alfred workflow which do currency conversion by using live currency rates from Open Exchange Rates API. For a complete list of support currencies, see [Currencies](./Currencies.md).
+
+&lt;!-- MarkdownTOC autolink="true" --&gt;
+
+- [Setup](#setup)
+  - [Prerequisite](#prerequisite)
+  - [Installation](#installation)
+  - [Config &amp; Settings](#config--settings)
+- [User Guide](#user-guide)
+  - [Classic Methods](#classic-methods)
+  - [Setting &amp; Help Methods](#setting--help-methods)
+  - [Support Currencies](#support-currencies)
+- [Credit &amp; License](#credit--license)
+
+&lt;!-- /MarkdownTOC --&gt;
+
+## Setup
+
+### Prerequisite
+
+* Any macOS which has built-in Python 2.7
+  * That normally referred to macOS 10.6+, but things will likely change following the release of Catalina (10.15)
+* Alfred 3+ with [Powerpack](https://www.alfredapp.com/powerpack/)
+
+### Installation
+
+* Head overto [Releases](https://github.com/tomy0000000/Coon/releases), download the latest version
+* Double-click on `Coon.alfredworkflow` to install
+* Auto-Update of workflow is enabled by default, but can be switch by sending query
+  * `cur workflow:autoupdate` for enabling Auto-Update
+  * `cur workflow:noautoupdate` for disabling Auto-Update
+
+### Config &amp; Settings
+
+* Config can be set in [workflow environment variables sheet](https://www.alfredapp.com/help/workflows/advanced/variables/#environment), by pressing `[x]` icon in Alfred Preferences
+* Settings is a json file located at `~/Library/Application Support/Alfred/Workflow Data/tech.tomy.coon`, or type the magic arguments `cur workflow:opendata` in Alfred will take you diractly to that diractory
+* Please setup your `APP_ID` before your first run, otherwise this workflow won't even work, at all.
+
+| Type     | Name        | Function                                                     | Default                        |
+| -------- | ----------- | ------------------------------------------------------------ | ------------------------------ |
+| Config   | `APP_ID`    | Credentials to aquire currencies rates, can be obtain at [Open Exchange Rates](https://openexchangerates.org/) for free |                                |
+| Config   | `PRECISION` | Round off position after decimal point                       | `2`                            |
+| Config   | `EXPIRE`    | Threshold to trigger rates update in seconds                 | `300`                          |
+| Config   | `BASE`      | Your primary, daily-use currency                             | `USD`                          |
+| Settings | `favorites` | Favorite conversion list                                     | `["EUR", "CNY", "JPY", "GBP"]` |
+
+## User Guide
+
+### Classic Methods
+
+The following examples demonstrate the usage with the default config and settings
+
+* `cur`: Convert between all favorite currencies and base currency with 1 unit
+![cur](assets/cur.png)
+* `cur [value]`: Convert between all favorite currencies and base currency with [value] unit
+![cur 200](assets/cur%20200.png)
+* `cur [currency]`: Convert between [currency] and base currency with 1 unit
+![cur GBP](assets/cur%20GBP.png)
+* `cur [value] [currency]`: Convert between [currency] and base currency with [value] unit
+![cur 5 GBP](assets/cur%205%20GBP.png)
+* `cur [currency_1] [currency_2]`: Convert between [currency_1] and [currency_2] with 1 unit
+![cur GBP CAD](assets/cur%20GBP%20CAD.png)
+* `cur [value] [currency_1] [currency_2]`: Convert between [currency_1] and [currency_2] with [value] unit
+![cur 5 GBP CAD](assets/cur%205%20GBP%20CAD.png)
+* Position-insensitive: besides the `cur` keyword, every parameter in the above methods are position-insensitive. Namely, the following query all outputs the same results:
+  * `cur 5 GBP CAD`
+  * `cur 5 CAD GBP`
+  * `cur GBP 5 CAD`
+  * `cur CAD 5 GBP`
+  * `cur GBP CAD 5`
+  * `cur CAD GBP 5`
+
+### Setting &amp; Help Methods
+
+* `cur-add`: Add a new currency to favorite list
+* `cur-rm`: Remove a currency from favorite list
+* `cur-arr`: Arrange orders of the favorite list
+![cur-arr](assets/cur-arr.gif)
+* `cur-ref`: Refresh Currency List &amp; Rates
+* `cur-help`: Show a list of example usage or opens up this README
+
+### Support Currencies
+
+See [Currencies](./Currencies.md)
+
+## Credit &amp; License
+
+* This project is inspired by [FlyRabbit/alfred3-workflow-CurrencyX](https://github.com/FlyRabbit/alfred3-workflow-CurrencyX)
+
+  I made this spin-off because the original one doesn't work in the way I thought it should be. As I'm trying to tweaking the the old ones, things get more out of control which ended up me deciding to re-write my own version.
+
+* Core Library depends on the work-of-art-library: [deanishe/alfred-workflow](https://github.com/deanishe/alfred-workflow)
+* API provided by [Open Exchange Rates](https://openexchangerates.org/)
+* Icon licenses as below
+
+| Name              | Author                      | Source                                                       |
+| ----------------- | --------------------------- | ------------------------------------------------------------ |
+| Main icon         | Freepik                     | [Flaticon](https://www.flaticon.com/free-icon/exchange_1924021) |
+| Hint icons        | Maxim Basinski              | [Flaticon](https://www.flaticon.com/packs/universal-icons)   |
+| Fiat Currencies   | Freepik                     | [Flaticon](https://www.flaticon.com/packs/countrys-flags)    |
+| Cryptocurrencies  | Freepik                     | [Flaticon](https://www.flaticon.com/packs/ecommerce-and-payment-method-logos) |
+| EarthCoin (EAC)   | earthcoinreloaded/earthcoin | [GitHub](https://github.com/earthcoinreloaded/earthcoin)     |
+| Factom (FCT)      | Factom, Inc.                | [Factom](https://www.factom.com/trademarks/)                 |
+| Feathercoin (FTC) | FeatherCoin/Feathercoin     | [GitHub](https://github.com/FeatherCoin/Feathercoin)         |
+| VertCoin (VTC)    | vertcoin-project/VertDocs   | [GitHub](https://github.com/vertcoin-project/VertDocs)       |
+
+* Any source code unmentioned above are released under the [MIT license](https://github.com/tomy0000000/Coon/blob/master/LICENSE)</string>
 	<key>uidata</key>
 	<dict>
 		<key>030A8EFF-8318-4D69-9906-F7E0E811D0C3</key>
@@ -1344,8 +1454,8 @@
 		<string>APP_ID</string>
 	</array>
 	<key>version</key>
-	<string>1.0.0</string>
+	<string>1.1.0</string>
 	<key>webaddress</key>
-	<string>https://github.com/tomy0000000/coon</string>
+	<string>https://github.com/tomy0000000/Coon</string>
 </dict>
 </plist>
